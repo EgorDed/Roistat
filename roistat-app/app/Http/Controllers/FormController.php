@@ -93,7 +93,6 @@ class FormController extends Controller
 
         $contactModel = $apiClient->contacts()->addOne($contactModel);
 
-
         $links = new LinksCollection();
         $links->add($leadModel);
         $apiClient->contacts()->link($contactModel, $links);
